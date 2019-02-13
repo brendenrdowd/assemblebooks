@@ -1,0 +1,10 @@
+.card {
+    max-width: 100%;
+}
+.card-body{
+    padding: 1em;
+}
+.card-title {
+    word-wrap: break-word;
+    /* overflow-wrap: break-word; */
+}

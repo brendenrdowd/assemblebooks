@@ -1,0 +1,39 @@
+<div class="container">
+  <h5>Titles A-M</h5>
+  <div class="row">
+    <div *ngFor="let book of firstSet" class="col-md-2 col-sm-12">
+      <div class="card shadow mb-5 bg-white rounded">
+        <img class="card-img-top" src={{book.volumeInfo.imageLinks.thumbnail}} alt="">
+        <div class="card-body">
+          <p class="card-title text-center lead"><strong>{{book.volumeInfo.title}}</strong></p>
+          <hr>
+          <p class="card-text">{{book.volumeInfo.authors}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form (submit)="moreA()">
+    <input type="submit" class="btn btn-primary mx-auto mb-3" value="more">
+  </form>
+</div>
+
+<hr class="my-4">
+
+<div class="container my-5">
+  <h5>Titles N-Z</h5>
+  <div class="row">
+      <div *ngFor="let book of secondSet" class="col-md-2 col-sm-12">
+        <div class="card shadow mb-5 bg-white rounded">
+          <img class="card-img-top" src={{book.volumeInfo.imageLinks.thumbnail}} alt="">
+          <div class="card-body">
+            <p class="card-title text-center lead"><strong>{{book.volumeInfo.title}}</strong></p>
+            <hr>
+            <p class="card-text">{{book.volumeInfo.authors}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <form (submit)="moreB()">
+    <input type = submit class="btn btn-primary mx-auto" value="more">
+  </form>
+</div>
